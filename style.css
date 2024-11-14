@@ -73,6 +73,7 @@
 
         /* Resultado */
         #result {
+            display: none;
             margin-top: 20px;
             padding: 15px;
             background: #e0f2fe;
