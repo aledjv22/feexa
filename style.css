@@ -1,93 +1,93 @@
-        /* Reset de márgenes y paddings */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
+/* Reset de márgenes y paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
 
-        /* Estilo general del cuerpo */
-        body {
-            display: grid;
-            grid-template-rows: 1fr auto;
-            min-height: 100vh;
-            background: #f3f4f6;
-            color: #333;
-        }
+/* Estilo general del cuerpo */
+body {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    min-height: 100vh;
+    background: #f3f4f6;
+    color: #333;
+}
 
-        /* Contenedor principal */
-        .container {
-            width: 90%;
-            max-width: 600px;
-            background: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            margin: auto;
-        }
+/* Contenedor principal */
+.container {
+    width: 90%;
+    max-width: 600px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: auto;
+}
 
-        /* Título de la página */
-        h1 {
-            text-align: center;
-            color: #1e3a8a;
-            margin-bottom: 20px;
-        }
+/* Título de la página */
+h1 {
+    text-align: center;
+    color: #1e3a8a;
+    margin-bottom: 20px;
+}
 
-        /* Estilo del formulario */
-        form {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
+/* Estilo del formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
 
-        /* Etiquetas */
-        label {
-            font-weight: bold;
-            color: #374151;
-        }
+/* Etiquetas */
+label {
+    font-weight: bold;
+    color: #374151;
+}
 
-        /* Selectores */
-        select {
-            padding: 10px;
-            border: 1px solid #d1d5db;
-            border-radius: 5px;
-            font-size: 16px;
-        }
+/* Selectores */
+select {
+    padding: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 5px;
+    font-size: 16px;
+}
 
-        /* Botón */
-        button {
-            padding: 12px;
-            background-color: #1e3a8a;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-            transition: background 0.3s ease;
-        }
-        
-        /* Efecto hover en el botón */
-        button:hover {
-            background-color: #3b82f6;
-        }
+/* Botón */
+button {
+    padding: 12px;
+    background-color: #1e3a8a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
 
-        /* Resultado */
-        #result {
-            display: none;
-            margin-top: 20px;
-            padding: 15px;
-            background: #e0f2fe;
-            color: #0c4a6e;
-            border-radius: 8px;
-            font-size: 16px;
-            line-height: 1.6;
-        }
+/* Efecto hover en el botón */
+button:hover {
+    background-color: #3b82f6;
+}
 
-        /* Estilo del footer */
-        footer {
-            width: 100%;
-            text-align: center;
-            padding: 10px;
-            background-color: #f1f1f1;
-            margin-top: 20px;
-        }
+/* Resultado */
+#result {
+    display: none;
+    margin-top: 20px;
+    padding: 15px;
+    background: #e0f2fe;
+    color: #0c4a6e;
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Estilo del footer */
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: #f1f1f1;
+    margin-top: 20px;
+}
