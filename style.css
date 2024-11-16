@@ -1,3 +1,15 @@
+/* Variables de colores */
+:root {
+    --primary-color: #1e3a8a;
+    --secondary-color: #3b82f6;
+    --background-color: #f3f4f6;
+    --text-color: #333;
+    --container-bg-color: #fff;
+    --container-shadow: rgba(0, 0, 0, 0.2);
+    --result-bg-color: #e0f2fe;
+    --result-text-color: #0c4a6e;
+}
+
 /* Reset de márgenes y paddings */
 * {
     margin: 0;
