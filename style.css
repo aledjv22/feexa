@@ -8,6 +8,9 @@
     --container-shadow: rgba(0, 0, 0, 0.2);
     --result-bg-color: #e0f2fe;
     --result-text-color: #0c4a6e;
+    --label-color: #374151;
+    --select-border-color: #d1d5db;
+    --footer-bg-color: #f1f1f1;
 }
 
 /* Reset de márgenes y paddings */
@@ -23,25 +26,25 @@ body {
     display: grid;
     grid-template-rows: 1fr auto;
     min-height: 100vh;
-    background: #f3f4f6;
-    color: #333;
+    background: var(--background-color);
+    color: var(--text-color);
 }
 
 /* Contenedor principal */
 .container {
     width: 90%;
     max-width: 600px;
-    background: #fff;
+    background: var(--container-bg-color);
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px var(--container-shadow);
     margin: auto;
 }
 
 /* Título de la página */
 h1 {
     text-align: center;
-    color: #1e3a8a;
+    color: var(--primary-color);
     margin-bottom: 20px;
 }
 
@@ -55,13 +58,13 @@ form {
 /* Etiquetas */
 label {
     font-weight: bold;
-    color: #374151;
+    color: var(--label-color);
 }
 
 /* Selectores */
 select {
     padding: 10px;
-    border: 1px solid #d1d5db;
+    border: 1px solid var(--select-border-color);
     border-radius: 5px;
     font-size: 16px;
 }
@@ -69,7 +72,7 @@ select {
 /* Botón */
 button {
     padding: 12px;
-    background-color: #1e3a8a;
+    background-color: var(--primary-color);
     color: white;
     border: none;
     border-radius: 5px;
@@ -80,7 +83,7 @@ button {
 
 /* Efecto hover en el botón */
 button:hover {
-    background-color: #3b82f6;
+    background-color: var(--secondary-color);
 }
 
 /* Resultado */
@@ -88,8 +91,8 @@ button:hover {
     display: none;
     margin-top: 20px;
     padding: 15px;
-    background: #e0f2fe;
-    color: #0c4a6e;
+    background: var(--result-bg-color);
+    color: var(--result-text-color);
     border-radius: 8px;
     font-size: 16px;
     line-height: 1.6;
@@ -100,6 +103,6 @@ footer {
     width: 100%;
     text-align: center;
     padding: 10px;
-    background-color: #f1f1f1;
+    background-color: var(--footer-bg-color);
     margin-top: 20px;
 }
