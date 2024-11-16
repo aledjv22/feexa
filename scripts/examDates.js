@@ -1,3 +1,7 @@
+/**
+ * Fechas de inicio de los períodos de exámenes.
+ * @type {Date[]}
+ */
 export const startDates = [
     new Date("2024-12-02"),
     new Date("2024-12-16"),
@@ -8,6 +12,11 @@ export const startDates = [
     new Date("2025-08-04"),
 ];
 
+/**
+ * Objeto que contiene las fechas de exámenes por año y materia.
+ * Cada materia tiene un día específico en el que se realiza el examen.
+ * @type {Object.<number, Object.<string, {day: number}>>}
+ */
 export const ExamdatesByYear = {
     1: {
         "INTRODUCCIÓN A LOS ALGORITMOS": { day: 1 },
@@ -49,10 +58,23 @@ export const ExamdatesByYear = {
     }
 };
 
+/**
+ * Obtiene las materias correspondientes a un año específico.
+ *
+ * @param {number} year - El año de la carrera.
+ * @returns {Object.<string, {day: number}>} Un objeto con las materias y sus días de examen.
+ */
 export const getSubjectsByYear = (year) => {
     return ExamdatesByYear[year] || {};
 };
 
+/**
+ * Obtiene el día del examen para una materia específica en un año específico.
+ *
+ * @param {number} year - El año de la carrera.
+ * @param {string} subject - La materia para la cual se desea obtener el día del examen.
+ * @returns {number|undefined} El día del examen o undefined si no se encuentra la materia.
+ */
 export const getExamDay = (year, subject) => {
     return ExamdatesByYear[year]?.[subject]?.day;
 };
