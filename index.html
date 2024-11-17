@@ -13,7 +13,7 @@
 
         <form id="examenForm">
             <label for="year">Selecciona el año de la carrera:</label>
-            <select id="year" name="year" onchange="loadSubjects()">
+            <select id="year" name="year">
                 <option value="1">1er año</option>
                 <option value="2">2do año</option>
                 <option value="3">3er año</option>
@@ -27,7 +27,7 @@
                 <!-- Calls from js -->
             </select>
 
-            <button type="button" onclick="calculateDatesExam()">Ver Fechas de Examen</button>
+            <button type="submit">Ver Fechas de Examen</button>
         </form>
 
         <div id="result"></div>
@@ -37,6 +37,6 @@
         <p>Puede estar sujeto a errores. <strong>NO ES UNA PÁGINA OFICIAL DE LA FACULTAD NI DEL CENTRO DE ESTUDIANTES</strong> no asumo responsabilidad alguna en caso de errores.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="scripts/main.js" type="module"></script>
 </body>
 </html>
