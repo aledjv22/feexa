@@ -1,6 +1,9 @@
 import { startDates, getSubjectsByYear, getExamDay } from './examDates.js';
 import { formatDate } from './utils.js';
 
+/**
+ * Carga las materias correspondientes al año seleccionado en el elemento select.
+ */
 const loadSubjects = () => {
     const selectedYear = document.getElementById("year").value;
     const subjectsYear = getSubjectsByYear(selectedYear);
@@ -16,14 +19,30 @@ const loadSubjects = () => {
     }
 };
 
+/**
+ * Agrega un encabezado de período de exámenes al resultado.
+ *
+ * @param {HTMLElement} result - El elemento donde se mostrará el resultado.
+ * @param {string} period - El período de exámenes.
+ */
 const addExamPeriodHeader = (result, period) => {
     result.innerHTML += `<h3 style="margin-top: 20px;">Exámenes ${period}</h3>`;
 };
 
+/**
+ * Agrega una fecha de examen al resultado.
+ *
+ * @param {HTMLElement} result - El elemento donde se mostrará el resultado.
+ * @param {number} dateCounter - El contador de la fecha del examen.
+ * @param {Date} examDate - La fecha del examen.
+ */
 const addExamDate = (result, dateCounter, examDate) => {
     result.innerHTML += `<p><strong>Llamado ${dateCounter}:</strong> ${formatDate(examDate)}</p>`;
 };
 
+/**
+ * Calcula y muestra las fechas de los exámenes para la materia y año seleccionados.
+ */
 const calculateDatesExam = () => {
     const selectedYear = document.getElementById("year").value;
     const subjectsSelect = document.getElementById("subject").value;
@@ -58,6 +77,9 @@ const calculateDatesExam = () => {
     result.style.display = "block";
 };
 
+/**
+ * Carga las materias al seleccionar un año.
+ */
 window.onload = loadSubjects;
 document.getElementById("year").addEventListener("change", loadSubjects);
 document.getElementById("examenForm").addEventListener("submit", (e) => {
