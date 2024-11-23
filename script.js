@@ -107,6 +107,7 @@ function calculateDatesExam() {
     } else {
         result.innerText = "Por favor, selecciona una materia válida.";
     }
+    result.style.display = "block";
 }
 
 
