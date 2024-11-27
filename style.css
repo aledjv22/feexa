@@ -83,6 +83,12 @@
             line-height: 1.6;
         }
 
+
+        /* Estilos de los titulares de exámenes */
+        #result h3:not(:first-child) {
+            margin-top: 20px;
+        }
+
         /* Estilo del footer */
         footer {
             width: 100%;
